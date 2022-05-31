@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="011.css">
+	<link rel="stylesheet" href="reset(1).css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+		
+</head>
+<body>
+<!----cabeçalho--->
+<div class="rodape">
+	<div class="rdp">
+		<li class="grid-8">
+			<a href="#"><img class="redes" src="imagens/img1.png" width="60" height="60" class="logos-redes"></a>
+			<a href="#"><img class="redes" src="imagens/img2.png" width="60" height="60" class="logos-redes"></a>
+			<a href="#"><img class="redes" src="imagens/img3.png" width="60" height="60" class="logos-redes"></a>
+			<a href="#"><img class="redes" src="imagens/img4.png" width="60" height="60" class="logos-redes"></a>
+		</li>
+	</div>
+</div>
+	<li class="grid-88">
+	<form method="post" action="form.php">
+	<label for="name" class="nome">Nome completo:</label>
+	<br>
+	<input type="text" id="name" name="name" value="Add seu nick">
+	<br><br>
+	<label class="nome">Gênero:</label>
+	<br><br>
+	<input type="radio" id="f" name="genero" value="feminino">
+	<label for="f">Feminino</label>
+	<br>
+	<input type="radio" id="m" name="genero" value="masculino">
+	<label for="m">Masculino</label>
+	<br><br>
+	<label for="estados" class="nome">Estado:</label><br>
+	<input list="estados" id="estados" name="estado">
+	<datalist id="estados">
+		<option value="AC">
+		<option value="AL">
+		<option value="AM">
+		<option value="BA">
+		<option value="PA">
+		<option value="CE">
+		<option value="GO">
+		<option value="MA">
+	</datalist>
+	<br><br>
+	<label class="nome">Quantos irmãos vocês tem?</label>
+	<br> <br>
+	
+	<input type="checkbox" id="irmao1" name="irmao[1]" value="um irmão">
+	<label for="irmao1">Apenas um irmão</label>
+	<br>
+	<input type="checkbox" id="irmao2" name="irmao[2]" value="dois irmãos">
+	<label for="irmao2">Dois irmãos</label>
+	<br>
+	<input type="checkbox" id="irmao3" name="irmao[3]" value="mais de três irmãos">
+	<label for="irmao3">Mais de três irmãos</label>
+	<br><br>
+	<input type="submit" class="envia" name="enviar" value="Enviar" >
+
+</form>
+
+</li>
+</body>
+</html>
