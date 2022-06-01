@@ -1,68 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-	<meta charset="utf-8">
-	<title>Formulário de Cadastro</title>
-    <link rel="stylesheet" href="011.css">
-	<link rel="stylesheet" href="reset(1).css">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-		
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
 </head>
+
 <body>
-<!----cabeçalho--->
-<div class="rodape">
-	<div class="rdp">
-		<li class="grid-8">
-			<a href="#"><img class="redes" src="imagens/img1.png" width="60" height="60" class="logos-redes"></a>
-			<a href="#"><img class="redes" src="imagens/img2.png" width="60" height="60" class="logos-redes"></a>
-			<a href="#"><img class="redes" src="imagens/img3.png" width="60" height="60" class="logos-redes"></a>
-			<a href="#"><img class="redes" src="imagens/img4.png" width="60" height="60" class="logos-redes"></a>
-		</li>
-	</div>
-</div>
-	<li class="grid-88">
-	<form method="post" action="form.php">
-	<label for="name" class="nome">Nome completo:</label>
-	<br>
-	<input type="text" id="name" name="name" value="Add seu nick">
-	<br><br>
-	<label class="nome">Gênero:</label>
-	<br><br>
-	<input type="radio" id="f" name="genero" value="feminino">
-	<label for="f">Feminino</label>
-	<br>
-	<input type="radio" id="m" name="genero" value="masculino">
-	<label for="m">Masculino</label>
-	<br><br>
-	<label for="estados" class="nome">Estado:</label><br>
-	<input list="estados" id="estados" name="estado">
-	<datalist id="estados">
-		<option value="AC">
-		<option value="AL">
-		<option value="AM">
-		<option value="BA">
-		<option value="PA">
-		<option value="CE">
-		<option value="GO">
-		<option value="MA">
-	</datalist>
-	<br><br>
-	<label class="nome">Quantos irmãos vocês tem?</label>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img//undraw_shopping_re_3wst.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+                
 	<br> <br>
-	
-	<input type="checkbox" id="irmao1" name="irmao[1]" value="um irmão">
-	<label for="irmao1">Apenas um irmão</label>
-	<br>
-	<input type="checkbox" id="irmao2" name="irmao[2]" value="dois irmãos">
-	<label for="irmao2">Dois irmãos</label>
-	<br>
-	<input type="checkbox" id="irmao3" name="irmao[3]" value="mais de três irmãos">
-	<label for="irmao3">Mais de três irmãos</label>
-	<br><br>
-	<input type="submit" class="envia" name="enviar" value="Enviar" >
-
-</form>
-
-</li>
+	<div class= 'gender-input'>
+        <label class="nome">Quantos irmãos vocês tem?</label>
+	    <input type="checkbox" id="irmao1" name="irmao[1]" value="um irmão">
+	    <label for="irmao1">Apenas um irmão</label>
+	    <br>
+	    <input type="checkbox" id="irmao2" name="irmao[2]" value="dois irmãos">
+	    <label for="irmao2">Dois irmãos</label>
+	    <br>
+	    <input type="checkbox" id="irmao3" name="irmao[3]" value="mais de três irmãos">
+	    <label for="irmao3">Mais de três irmãos</label>
+    </div>          
+        <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
