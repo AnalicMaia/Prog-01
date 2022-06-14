@@ -5,7 +5,7 @@ $nome = $_POST['nome'];
 $datanasc = $_POST['datanasc'];
 $email= $_POST['email'];
 
-
+//Arrumar essa inserção!
 
 $sql = "INSERT INTO usuarios (nome, email, nascimento) VALUES ('$nome', '$datanasc', '$email')";
 
