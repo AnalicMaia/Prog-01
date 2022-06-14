@@ -2,7 +2,7 @@
 $servidor='localhost';
 $user= 'root';
 $pass= '';
-$bdname= 'prog-01';
+$bdname= 'test';
 
 $conexao= mysqli_connect($servidor, $user, $pass,$bdname);
 
