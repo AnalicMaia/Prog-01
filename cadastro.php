@@ -10,7 +10,7 @@ $pass=$_POST['pass'];
 
 $sql = "INSERT INTO cadastro VALUES ('$nome', '$datanasc', '$email', '$pass')";
 
-
+echo 'test';
 //$sql = "INSERT INTO cadastro VALUES (null, '$nome','$ano')";
 
 if(mysqli_query($conexao,$sql)){
