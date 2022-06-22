@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +15,7 @@
 
         </div>
         <div class="form">
-            <form action="cadastro.php" method="post">
+            <form action="cadastro.php" method="post" onsubmit="return validacao()">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
@@ -53,11 +52,34 @@
         </div>
     </div>          
         <div class="continue-button">
-                    <button><a href="#">Continuar</a> </button>
+                    <button ><a href="#">Continuar</a> </button>
                 </div>
             </form>
         </div>
     </div>
+    <script type="text/javascript">
+
+		function validacao() {
+            // codigo parte do principio que todos os campos estão preenchidos
+			var dados = document.getElementsByClassName('container')
+            var tamanho = dados.length
+            // tamanho é uma variavel p verificar o tamanho do vetor
+            var temAlguemvazio = false;
+            for(var i=0; i< tamanho; i++){
+                if((dados[i].value==' ')){
+                    temAlguemvazio=true;
+                    break
+                    // verificar se tem alguem vazio, quando identifica break
+                }
+            }
+            if (temAlguemvazio){
+                // quando tem alguem campo não preenchido 
+                alert('por favor, preencha todos os campos!')
+                return false
+            }else{
+                return true
+            }
+		}
 </body>
 
 </html>
