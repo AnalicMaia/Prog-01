@@ -7,7 +7,7 @@ $email= $_POST['email'];
 
 //Arrumar essa inserção!
 
-$sql = "INSERT INTO usuarios (nome, email, nascimento) VALUES ('$nome', '$datanasc', '$email')";
+$sql = "INSERT INTO cadastro (nome, email, nascimento) VALUES ('$nome', '$datanasc', '$email')";
 
 
 if(mysqli_query($conexao,$sql)){
