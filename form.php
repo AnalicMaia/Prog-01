@@ -8,7 +8,7 @@ echo "O nome é $nome, com o email $email e com data de nascimento de: $datanasc
 -------------------------
 // conectar 
 
-$sql = "INSERT INTO usuarios (nome, email, nascimento) VALUES ($nome, $datanasc, $email)";
+$sql = "INSERT INTO cadastro (nome, email, nascimento) VALUES ($nome, $datanasc, $email)";
 
 
 ?>
