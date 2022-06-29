@@ -180,7 +180,9 @@ body {
         width: 100%;
     }
 }
+/** @media (min-width: 768)768 (ponto de quebra)
 
+**/
 @media screen and (max-width: 1064px) {
     .container {
         width: 90%;
