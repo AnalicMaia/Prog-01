@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="jpg" alt="">
+
+        </div>
+        <div class="form">
+            <form action="cadastro.php" method="post" onsubmit="return validacao()">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" >
+                    </div> <br><br>
+
+                    <div class="input-box">
+                        <label for="firstname">Data de nascimento:</label>
+                        <input id="datanasc" type="date" name="firstname" placeholder="Digite sua data de nascimento">
+                    </div>
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" >
+                    </div>
+                
+                </div>
+                
+
+	<div class= 'gender-input'>
+        <div class="input-box">
+            <label for="firstname">Senha</label>
+            <input id="pass" type="password" name="firstname" placeholder="Digite sua senha" >
+
+        </div>
+    </div>          
+        <div class="continue-button">
+                    <button ><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+		function validacao() {
+            // codigo parte do principio que todos os campos estão preenchidos
+			var dados = document.getElementsByClassName('container')
+            var tamanho = dados.length
+            // tamanho é uma variavel p verificar o tamanho do vetor
+            var temAlguemvazio = false;
+            for(var i=0; i< tamanho; i++){
+                if((dados[i].value==' ')){
+                    temAlguemvazio=true;
+                    break
+                    // verificar se tem alguem vazio, quando identifica break
+                }
+            }
+            if (temAlguemvazio){
+                // quando tem alguem campo não preenchido 
+                alert('por favor, preencha todos os campos!')
+                return false
+            }else{
+                return true
+            }
+		}
+    </script>
+</body>
+</html>
